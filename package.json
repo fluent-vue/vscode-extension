@@ -1,0 +1,25 @@
+{
+  "name": "fluent-vue",
+  "displayName": "fluent-vue",
+  "description": "Syntax highlighting support for Fluent and fluent-vue",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ftl",
+      "aliases": ["Fluent", "ftl"],
+      "extensions": [".ftl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ftl",
+      "scopeName": "source.ftl",
+      "path": "./syntaxes/ftl.tmLanguage.json"
+    }]
+  }
+}
