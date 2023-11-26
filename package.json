@@ -1,7 +1,7 @@
 {
   "name": "fluent-vue",
   "displayName": "fluent-vue",
-  "description": "Syntax highlighting support for Fluent and fluent-vue",
+  "description": "Syntax highlighting for Fluent and fluent-vue",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.84.0"
