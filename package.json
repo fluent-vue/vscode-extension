@@ -1,33 +1,50 @@
 {
   "name": "fluent-vue",
   "displayName": "fluent-vue",
-  "description": "Syntax highlighting for Fluent and fluent-vue",
+  "type": "module",
   "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.84.0"
-  },
+  "description": "Syntax highlighting for Fluent and fluent-vue",
   "categories": [
     "Programming Languages"
   ],
+  "engines": {
+    "vscode": "^1.84.0"
+  },
   "contributes": {
-    "languages": [{
-      "id": "ftl",
-      "aliases": ["Fluent", "ftl"],
-      "extensions": [".ftl"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "ftl",
-      "scopeName": "source.ftl",
-      "path": "./syntaxes/ftl.tmLanguage.json"
-    }, {
-      "path": "./syntaxes/vue.injection.json",
-      "scopeName": "meta.embedded.ftl",
-      "injectTo": ["source.vue"],
-      "embeddedLanguages": {
-        "source.ftl": "ftl",
-        "meta.embedded.block.ftl": "ftl"
+    "languages": [
+      {
+        "id": "ftl",
+        "aliases": [
+          "Fluent",
+          "ftl"
+        ],
+        "extensions": [
+          ".ftl"
+        ],
+        "configuration": "./language-configuration.json"
       }
-    }]
+    ],
+    "grammars": [
+      {
+        "language": "ftl",
+        "scopeName": "source.ftl",
+        "path": "./syntaxes/ftl.tmLanguage.json"
+      },
+      {
+        "path": "./syntaxes/vue.injection.json",
+        "scopeName": "meta.embedded.ftl",
+        "injectTo": [
+          "source.vue"
+        ],
+        "embeddedLanguages": {
+          "source.ftl": "ftl",
+          "meta.embedded.block.ftl": "ftl"
+        }
+      }
+    ]
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.1.0",
+    "eslint": "^8.54.0"
   }
 }
