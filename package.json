@@ -1,14 +1,23 @@
 {
+  "publisher": "fluent-vue",
   "name": "fluent-vue",
   "displayName": "fluent-vue",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "private": true,
   "description": "Syntax highlighting for Fluent and fluent-vue",
+  "author": {
+    "name": "Ivan Demchuk",
+    "email": "ivan.demchuk@gmail.com",
+    "url": "https://demivan.me"
+  },
+  "repository": "https://github.com/fluent-vue/vscode-extension",
   "categories": [
     "Programming Languages"
   ],
+  "icon": "images/logo.png",
   "engines": {
-    "vscode": "^1.84.0"
+    "vscode": "^1.82.0"
   },
   "contributes": {
     "languages": [
@@ -42,6 +51,9 @@
         }
       }
     ]
+  },
+  "scripts": {
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.1.0",
