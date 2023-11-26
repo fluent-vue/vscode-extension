@@ -20,6 +20,14 @@
       "language": "ftl",
       "scopeName": "source.ftl",
       "path": "./syntaxes/ftl.tmLanguage.json"
+    }, {
+      "path": "./syntaxes/vue.injection.json",
+      "scopeName": "meta.embedded.ftl",
+      "injectTo": ["source.vue"],
+      "embeddedLanguages": {
+        "source.ftl": "ftl",
+        "meta.embedded.block.ftl": "ftl"
+      }
     }]
   }
 }
